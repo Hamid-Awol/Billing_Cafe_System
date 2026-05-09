@@ -60,3 +60,43 @@ Arsi University Lounge previously relied on a manual, paper-based billing proces
 
 We implemented a **Three-Tier Architecture** to ensure separation of concerns, maintainability, and scalability:
 
+**Deployment Environment:**
+- **Local Development:** XAMPP (Apache + PHP + MySQL)
+- **Production Hosting:** InfinityFree Cloud Platform
+- **Version Control:** Git & GitHub
+
+---
+
+## 👥 User Roles & Responsibilities
+
+| Role | Capabilities | Restrictions |
+|------|-------------|--------------|
+| **Admin** | Full system access, user management, menu CRUD, view all reports | None |
+| **Cashier** | Take orders, process payments, generate bills, view basic reports | Cannot manage users or menu items |
+| **Waitress** | View order list with statuses, serve completed orders | Read-only access; cannot modify orders or statuses |
+| **Customer** | Browse menu, place orders, upload payment receipts | No login required; cannot access dashboard |
+
+> **Design Note:** The Waitress role is intentionally read-only. The Cashier controls the `Completed` status (financial closure), which triggers the Waitress to serve the order. This reflects the actual division of labor at Arsi University Lounge.
+
+---
+
+## 💻 Technology Stack
+
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| **Frontend** | HTML5, CSS3, Bootstrap 5, JavaScript | Responsive user interface |
+| **Backend** | PHP 8.1+ | Server-side logic & API endpoints |
+| **Database** | MySQL 10.6 (MariaDB) | Persistent data storage |
+| **Server** | Apache 2.4 | HTTP request handling |
+| **Local Environment** | XAMPP | Development & testing |
+| **Production Host** | InfinityFree | Cloud deployment |
+| **Version Control** | Git & GitHub | Source code management |
+| **IDE** | Visual Studio Code | Code editing & debugging |
+
+---
+
+## 🗄️ Database Schema
+
+The database is designed with data integrity and historical accuracy as core principles. The schema includes **6 core tables** with carefully defined relationships:
+
+
