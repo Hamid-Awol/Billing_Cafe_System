@@ -8,26 +8,6 @@
 > **A comprehensive web-based billing and order management solution developed for Arsi University Lounge, replacing the traditional paper-based system with a secure, efficient, and scalable digital platform.**
 
 ---
-
-## 📋 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
-- [User Roles & Responsibilities](#-user-roles--responsibilities)
-- [Technology Stack](#-technology-stack)
-- [Database Schema](#-database-schema)
-- [Installation & Setup](#-installation--setup)
-- [Project Structure](#-project-structure)
-- [Security Implementation](#-security-implementation)
-- [Testing Strategy](#-testing-strategy)
-- [Screenshots](#-screenshots)
-- [Project Team](#-project-team)
-- [Acknowledgments](#-acknowledgments)
-- [License](#-license)
-
----
-
 ## 📖 Project Overview
 
 Arsi University Lounge previously relied on a manual, paper-based billing process that was slow, error-prone, and difficult to audit. This project delivers a fully computerized **Lounge Billing Management System** that automates order taking, bill calculation, payment processing, receipt generation, and sales reporting.
